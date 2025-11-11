@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+2<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8" />
@@ -8,7 +8,7 @@
       .box {
         width: 70px;
         height: 70px;
-        background-color: teal;
+        background-color: purple;
         font-size: 300%;
         text-align: center;
         user-select: none;
@@ -69,8 +69,8 @@
         //////////////////////////////////////////////////////////////////
 
         // TODO 2 - Variable declarations
-
-
+       var positionX = 0;
+       var points = 0;
 
 
 
@@ -80,7 +80,7 @@
          * If the box drifts off the screen, turn it around!
          */
         function update() {
-
+        moveBoxTo(144)
         
 
           
@@ -94,8 +94,9 @@
          * - move the box to the left side of the screen.
          */
         function handleBoxClick() {
-
-
+        points++;
+        positionX = positionX +10;
+        changeBoxText(0);
 
 
         }
